@@ -13,7 +13,9 @@ const json=[{
     "articulos":[{
                     "id":1,
                     "nombre":"Artistica",
-                    "tipo":"artistica",                    
+                    "tipo":"artistica", 
+                    "carpeta":"imagenes/articulos/artistica/fondo",         
+                    "img": ["url1", "url2", "url3"],                   
                     "productos":[{
                                     "id":1,
                                     "name":"Lapices",
@@ -72,7 +74,9 @@ const json=[{
                 },{
                     "id":2,
                     "nombre":"Productios Varios",
-                    "tipo":"varios",   
+                    "tipo":"varios", 
+                    "carpeta":"imagenes/articulos/varios/fondo",         
+                    "img": ["url1", "url2", "url3"],  
                     "productos":[{
                                     "id":1,
                                     "name":"Productos Varios 1",
@@ -104,6 +108,8 @@ const json=[{
                     "id":3,
                     "nombre":"Pinturas",
                     "tipo":"pintura",   
+                    "carpeta":"imagenes/articulos/pinturas/fondo",         
+                    "img": ["url1", "url2", "url3"], 
                     "productos":[{
                                     "id":1,
                                     "name":"Pinturas Acrilico",
@@ -218,7 +224,7 @@ function addLista2(){
     json[0].articulos.forEach((cat, id) =>{
         cat.productos.forEach((el, id) =>{
             el.lista.forEach((prod, id) =>{
-                //console.log(prod.id, prod.titulo, id); 
+                //console.log(prod.id, prod.titulo, id);
                 var ul1_ = document.querySelector('ul#art_1 li.producto');
                 var clonA = ul1_.cloneNode(true);                             
                 clonA.id=el.tipo+prod.id;                                                    
@@ -240,12 +246,19 @@ function addLista(){
     }
     document.querySelector('#contArticulo').remove();        
     json[0].articulos.forEach((cat, id) =>{
-        //console.log(cat,id);              
+        //console.log(cat,id);                      
         if(catUrl==cat.tipo){ 
-            document.querySelector('header').remove();
+            const h_ = document.querySelector('#contHeader');
+            h_.querySelector('h1').textContent=cat.nombre;
+    
+            //document.querySelector('header').remove();
             cat.productos.forEach((el, id) =>{
-                //console.log(el, id);
-                if(tipoUrl==el.tipo || tipoUrl==null){                    
+                //console.log(el, id);      
+                if(tipoUrl==el.tipo){
+                    const h2_ = document.querySelector('#contHeader');               
+                    h2_.querySelector('h1').textContent=el.name; 
+                }             
+                if(tipoUrl==el.tipo || tipoUrl==null){
                     el.lista.forEach((prod, id) =>{
                         //console.log(prod.id, prod.titulo, id); 
                         var cc = document.querySelector('#articulos li.producto');
