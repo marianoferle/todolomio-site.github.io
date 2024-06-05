@@ -1,4 +1,4 @@
-{
+const json=[{
     "nombre": "productos todolomio",
     "articulos":[{
                     "id":1,
@@ -128,4 +128,4 @@
                                 }]
                 
                 }]
-}
+}];
