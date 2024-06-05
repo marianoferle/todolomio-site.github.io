@@ -1,0 +1,62 @@
+{
+    "nombre": "productos todolomio",
+    "articulos":[{
+                    "id":1,
+                    "nombre":"Productos de Artistica",
+                    "tipo":"artistica",                    
+                    "productos":[{
+                                    "id":1,
+                                    "name":"lapices",
+                                    "tipo":"productos",
+                                    "lista":[{
+                                                "id":1,
+                                                "titulo": "name1",
+                                                "descripcion": "...",
+                                                "precio": 1500,        
+                                                "img": ["url1", "url2", "url3"]
+                                            }]
+                            
+                                },{
+                                    "id":2,
+                                    "name":"papeles",
+                                    "tipo":"productos",
+                                    "lista":[{
+                                                "id":1,
+                                                "titulo": "name1",
+                                                "descripcion": "...",
+                                                "precio": 1500,        
+                                                "img": ["url1", "url2", "url3"]
+                                            }]  
+                                }]
+                
+                },{
+                    "id":2,
+                    "nombre":"Productios Varios",
+                    "tipo":"otros",   
+                    "productos":[{
+                                    "id":1,
+                                    "name":"Productos Varios 1",
+                                    "tipo":"productos",
+                                    "lista":[{
+                                                "id":1,
+                                                "titulo": "name1",
+                                                "descripcion": "...",
+                                                "precio": 1500,        
+                                                "img": ["url1", "url2", "url3"]
+                                            }]
+                                
+                                },{
+                                    "id":2,
+                                    "name":"Productos Varios 2",
+                                    "tipo":"productos",
+                                    "lista":[{
+                                                "id":1,
+                                                "titulo": "name1",
+                                                "descripcion": "...",
+                                                "precio": 1500,        
+                                                "img": ["url1", "url2", "url3"]
+                                            }]  
+                                }]
+                
+                }]
+  }

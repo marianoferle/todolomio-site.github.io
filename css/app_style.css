@@ -1,0 +1,553 @@
+/* 
+Diseño y Programacion Web: 
+-*-Mariano Ferle-*- comunicación multimedia
+www.marianoferle.com.ar
+(+54 11) 5951-2598  
+marianoferle@gmail.com
+*/ 
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; 
+  box-sizing: border-box;
+  -moz-user-select: none; 
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a{
+  color:#000;
+  text-decoration: none;
+}
+
+/*------------------------------- CONTAINER ---------------------------------*/
+
+body{
+  background-color: #fff;
+}
+
+#app{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+}
+
+#contenedor{
+  width: 100%;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  display: block;
+  position:relative;
+}
+
+
+
+/*###############################  nav #################################*/
+
+nav.navbar{
+  position: fixed;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  z-index: 99;
+  display: block;
+}
+
+#navegador ul.dropdown-menu{
+  padding: 10px;
+}
+#navegador ul li ul li{
+
+}
+
+#navegador ul li ul li a.dropdown-item{
+  text-decoration: none;
+  color:#fff;
+}
+
+/*############################### nav #################################*/
+
+
+
+
+
+/*############################### header #################################*/
+
+header{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+}
+
+header #contHeader{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+  position: relative;
+  overflow: hidden;
+  max-height: 609px;
+}
+
+header #contHeader h1{  
+  width: 600px;
+  height: auto;
+  float: left;
+  display: block;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  color: #fff;
+  text-shadow: 3px 1px 6px rgba(0, 0, 0, 1);
+  font-size: 8vw;
+  font-weight: bold;
+}
+
+header #contHeader > img{
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;
+}
+
+/*############################### header #################################*/
+
+
+
+
+/*############################### section #################################*/
+
+section{
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;
+}
+
+section #contSection{
+  width: 100%;
+  height: auto;
+  float: left;
+  display: block;  
+  background-color: #fff;
+  margin-top: 56px;
+}
+section #contSection ul#art_1{
+  width: 100%;
+  height: auto;
+  margin:0;
+  padding:0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+section #contSection ul#art_1 li.producto{
+  list-style: none;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin: 10px;
+  box-sizing: border-box;
+  min-height: 100px;
+  float: left;
+  border: 1px #bbb solid;
+  border-radius: 10px;
+}
+
+
+ul#art_1 li.producto a{
+  width: 100%;
+  height: 260px;
+}
+
+ul#art_1 li.producto a div.contProducto{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+ul#art_1 li.producto a div.contProducto > img{
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  background-color: #000;
+  border-radius: 100px;
+}
+
+ul#art_1 li.producto a div.contProducto h1{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+}
+
+ul#art_1 li.producto a div.contProducto h2{
+  font-size: 16px;    
+  margin: 5px 0 0 0; 
+
+}
+
+
+
+
+section #contSection ul#articulos{
+    width: 100%;
+    height: auto;
+    margin:0;
+    padding:0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#articulos li.producto{
+  list-style: none;
+  width: 300px;
+  display: flex;
+  flex-direction: row;
+  height: auto;
+  margin: 10px;
+  box-sizing: border-box;
+  min-height: 100px;
+  float: left;
+  border: 1px #bbb solid;
+  border-radius: 10px;
+}
+
+#articulos li.producto a{
+  width: 100%;
+  height: 260px;
+}
+
+#articulos li.producto a div.contProducto{
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#articulos li.producto a div.contProducto > img{
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  background-color: #000;
+  border-radius: 100px;
+}
+
+#articulos li.producto a div.contProducto h1{
+  font-size: 16px;
+  font-weight: 400;
+  margin: 5px 0 0 0;
+}
+
+#articulos li.producto a div.contProducto h2{
+  font-size: 16px;    
+  margin: 5px 0 0 0; 
+}
+
+#contSection #contArticulo{
+  width: 100%;
+  height: auto;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  /*margin-top: 56px;*/
+  display: flex;
+  flex-direction: row;
+}
+#contSection #contArticulo > img{
+  width: 40%;
+  height: auto;
+  display: block;
+  float: left;
+  min-height: 200px;    
+  margin: 0px 0px 0 30px;
+  box-sizing: border-box;
+  border-radius: 150px;
+}
+
+#contSection #contArticulo #contInfo{
+  width: 60%;
+  height: auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 20px;    
+  min-height: 670px;
+}
+
+#contSection #contArticulo #contInfo h1{
+  font-weight: bold;
+  text-transform: uppercase;
+}
+#contSection #contArticulo #contInfo  h2{
+  font-size: 20px;
+  font-weight: 100;
+  height: 60px;
+}
+#contSection #contArticulo #contInfo  h3{
+
+}
+#contSection #contArticulo #contInfo  #botCompra{
+  
+}
+#contSection #contArticulo #contInfo #botCompra a{ 
+  width: 160px;
+  height: 40px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  background: #308f2f;
+  text-decoration: none;
+  color:#fff;   
+  flex-direction: row;
+}
+#contSection #contArticulo #contInfo #botCompra a > img{ 
+  margin: 0px 5px 0 5px;
+}
+
+#contSection #contArticulo #contInfo #botCompra a:hover{ 
+  background: #52bb50;
+
+}
+
+
+
+/*############################### section #################################*/
+
+
+
+
+
+/*############################### banner #################################*/
+
+aside{
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+}
+ul#contBanner{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ul#contBanner li.banner{
+  width: 150px;
+  margin: 10px;
+  padding: 10px;
+  box-sizing: border-box;
+  list-style: none;
+  border:1px #ddd solid;
+  border-radius: 10px;
+}
+ul#contBanner li.banner a{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+ul#contBanner li.banner a > img{
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+  background: #000;
+}
+
+ul#contBanner li.banner a p{
+  margin: 0
+}
+
+/*############################### banner #################################*/
+
+
+
+
+
+
+/*############################### footer #################################*/
+footer{
+  width: 100%;
+  height: 300px;
+  background-color: #333;
+  float: left;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;   
+}
+
+footer #contFooter{
+ color:#fff;
+}
+footer #contFooter #contacto{
+  font-weight: 100;
+  letter-spacing: 2px;   
+  margin-right: 50px;
+}
+#contacto #contTitulo{
+ 
+}
+#contacto #contEmail{
+ 
+}
+#contacto #contTelefono{
+ 
+}
+/*############################### footer #################################*/
+
+
+
+
+
+
+/*############################### slider gallery #################################*/
+
+
+#gallery {
+  width: 40%;
+  overflow: hidden;
+  border-radius: 100px;
+  margin: 50px 50px 0 50px;
+}
+
+.gallery-container {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.gallery-item {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+
+.gallery-item img {
+  width: 100%;
+  display: block;
+  border-radius: 200px;
+}
+
+/* Navegación del Slider */
+.gallery-navigation {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -70px;
+}
+
+.nav-button {
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;   
+  opacity: .6;
+}
+
+.nav-button:hover {
+background-color: #005f5f;
+}
+
+
+/*############################### slider gallery #################################*/
+
+
+
+
+@media screen and (max-width: 1920px) {
+
+}
+
+@media screen and (max-width: 1380px) {
+  #articulos li.producto {
+    width: 23%;
+  }
+  #contSection #contArticulo > img{
+    padding: 60px;
+    box-sizing: border-box;
+  }
+  #contSection #contArticulo #contInfo{   
+    min-height: 450px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  #articulos li.producto {
+    width: 45%;
+  }
+  #contSection #contArticulo > img{
+
+  }
+  #gallery {    
+    margin: 20px 20px 0 20px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  #articulos li.producto {
+    width: 100%;
+  }
+  #contSection #contArticulo > img{
+    width: 100%;
+    margin: 0;
+    padding: 50px;
+    box-sizing: border-box;
+  }  
+  #contSection #contArticulo{
+    flex-direction: column;
+  }
+  #gallery {
+    width: 80%;
+    margin: 10px 10px 0 10px;
+  }
+}
+
+
+@media screen and (max-width: 380px) {
+  #articulos li.producto {
+    width: 100%;
+  }
+}
+
+
+
+
+
