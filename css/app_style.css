@@ -82,6 +82,13 @@ nav.navbar{
   padding: 10px;
 }
 
+.nav-item ul.dropdown-menu li{
+  min-height: 40px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
 .nav-item ul li ul.menuOff{
   height: 0;
   opacity: 0;
@@ -545,6 +552,10 @@ background-color: #005f5f;
   .nav-item{
     flex-direction: column;
     align-items: flex-start;
+    min-height: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
   }
   ul.dropdown-menu{
     width: 100%;
